@@ -10,7 +10,7 @@ import { useToast } from '../../hooks/toast';
 
 import getValidationErrors from '../../utils/getValidationErrors';
 
-import logo from '../../assets/logo.svg';
+import logoImg from '../../assets/logo.svg';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -73,7 +73,7 @@ const SigIn: React.FC = () => {
     <Container>
       <Content>
         <AnimationContainer>
-          <img src={logo} alt="GoBarber" />
+          <img src={logoImg} alt="GoBarber" />
           <Form ref={formRef} onSubmit={handleSubimit}>
             <h1>Faça seu Logon</h1>
 
