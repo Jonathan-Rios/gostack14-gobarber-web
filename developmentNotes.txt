@@ -21,3 +21,5 @@ yarn add axios
 yarn add react-spring
 yarn add react-router-dom
 yarn add @types/react-router-dom
+yarn add react-day-picker
+yarn add date-fns
