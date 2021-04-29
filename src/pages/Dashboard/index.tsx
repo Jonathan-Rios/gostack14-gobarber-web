@@ -110,9 +110,10 @@ const Dashboard: React.FC = () => {
   }, [selectedDate]);
 
   const selectedWeekDay = useMemo(() => {
-    return format(selectedDate, 'cccc', {
+    const weekDayDate = format(selectedDate, 'cccc', {
       locale: ptBR,
     });
+    return weekDayDate.charAt(0).toUpperCase() + weekDayDate.slice(1);
   }, [selectedDate]);
 
   const morningAppointments = useMemo(() => {
